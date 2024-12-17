@@ -1,19 +1,14 @@
+import es011 as clc
 while True:
     print("benvenuto nella nostra calcolatrice")
     print("inserisci la operazione che vuoi effettuare ")
-    scelta = int(input("1 sottrazione 2 addizione "))
+    scelta = int(input("1 sottrazione 2 addizione 0 per uscire "))
     if scelta==0:
         break
     elif scelta==1:
-        n1=int(input("inserisci il primo numero "))
-        n2=int(input("inserisci il secondo numero "))
-        diff=n1-n2
-        print("la differenza e ",diff)
+        clc.sottrazione()
     
     elif scelta==2:
-        n1=int(input("inserisci il primo numero "))
-        n2=int(input("inserisci il secondo numero "))
-        somma=n1+n2
-        print("la somma e ",somma)
+        clc.somma()
     else:
         print("Scelta non corretta!")
